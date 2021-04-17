@@ -1,0 +1,176 @@
+*{
+    /* outline: 1px dotted black; */
+    margin: 0px;
+    padding: 0px;
+}
+#top{
+    background-color: #245076;
+    width: 970px;
+    min-height: 200px;
+    padding: 10px 10px 20px 10px;
+}
+    #top img{
+        width: 352px;
+        height: 100px;
+        margin: 10px 284px 0px 0px;
+    }
+    #buscador{
+        display: inline-block;
+        width: 330px;
+        vertical-align: top;
+    }
+    #buscador p{
+        text-align: center;
+        color: white;
+        font-family: sans-serif;
+        margin-bottom: 4px;
+        font-size: 14px;
+    }
+    #buscador span{
+        text-decoration: underline;
+        color: #c1a806;
+    }
+        .browser{
+            display: inline-block;
+            background-color: #444444;
+            border-radius: 15px;
+            width: 330px;
+            height: 65px;
+            box-shadow: 3px 3px 6px rgb(0,0,0,0.5);
+        }   
+            .browser input{
+                width: 56px;
+                height: 35px;
+                margin: 12px 5px 12px 46px;
+                padding: 1px 56px;
+            }
+            .browser button{
+                background-color: #245076;
+                height: 40px;
+                width: 60px;
+                color: white;
+                border-radius: 7px;
+                border: 2px solid #c0c0c0;
+            }
+    #buttons{
+        padding: 20px;
+        margin-left: 20px;
+    }
+    .fake{
+        width: 858px;
+        padding: 0px 30px;
+        background-color:  #477ead;
+        border-radius: 10px;
+        box-shadow: 3px 3px 6px rgb(0,0,0,0.5);
+    }
+        .button{
+            padding: 10px 20px;
+            background-color: #477ead;
+            border: none;
+            color: white;
+            font-size: 24px;
+            font-family: sans-serif;
+        }
+        .button:hover{
+            background-color: white;
+            color: #477ead;
+            transition-duration: 0.9s;
+        }
+    .lista-1{
+        display: inline-block;
+        margin: 10px 18px 0px 50px;
+    }
+        .lista-1 ul li{
+            color: white;
+            text-align: center;
+            text-decoration: underline;
+            font-size: 18px;
+            font-family: sans-serif;
+            padding: 5px;
+            list-style-type: disclosure-closed;
+            list-style-position: inside;
+            
+        }
+    .parrafo{
+        display: inline-block;
+        vertical-align: top;
+    }
+        .parrafo p{
+            width: 696px;
+            text-align: center;
+            color: white;
+            font-family: sans-serif;
+            margin-bottom: 10px;
+        }
+        .lista-2 p{
+            font-size: 20px;
+            padding: 5px 0px;
+        }
+        .lista-2 span{
+            color: gold;
+            font-style: italic;
+        }
+#mid{
+    background-color: #ffffff;
+    width: 970px;
+    min-height: 200px;
+    padding: 10px;
+}
+    .mid-content{
+        display: inline-block;
+        min-height: 200px;
+        width: 343px;
+        vertical-align: top;
+        margin: 0px 0px 0px 94px
+    }
+        .mid-content h3{
+            font-family: -webkit-pictograph;
+            text-align: center;
+            margin: 5px 0px;
+        }
+        .mid-content p{
+            font-family: -webkit-pictograph;
+            text-align: center;
+        }
+        .mid-content span{
+            font-size: 15px;
+            color: #73A7D5;
+        }
+        .mid-content ul li{
+            color: #73A7D5;
+            font-family: -webkit-pictograph;
+            text-align: center;
+            margin-left: 48px;
+            list-style-type: square;
+        }
+        .mid-content ul li::marker{
+            color: black;
+        }
+    .blue-line{
+        height: 4px;
+        width: 420px;
+        background-color: #73A7D5;
+    }
+#bottom{
+    background-color: #245076;
+    width: 970px;
+    min-height: 100px;
+    padding: 10px;
+}
+    .links{  
+        padding: 50px 0px 15px 170px; 
+    }
+    #bottom a{
+        display: inline;
+        margin: 0px 20px;
+        color: #87B9E5;
+        font-family: sans-serif;
+        text-decoration: none;
+    }
+    #bottom p{
+        margin: 0px 20px;
+        color: #87B9E5;
+        font-family: sans-serif;
+        text-align: center;
+        font-size: 14px;
+    }
