@@ -1,0 +1,34 @@
+.jumbotron{
+    padding: 15% 10% 5% 10%;
+    background-color: #e9ecef;
+}
+.navbar-nav{
+    margin-right: auto;
+}
+.form-inline{
+    margin-right: 10px;
+}
+@media (min-width: 576px){
+    .form-inline .form-control {
+        display: inline-block;
+        width: auto;
+        vertical-align: middle;
+    }
+}
+@media (max-width: 575px){
+    .form-inline .form-control {
+        display: inline-block;
+        width: auto;
+        vertical-align: middle;
+    }
+}
+.container{
+    padding: 5% 2%;
+}
+.mx-auto{
+    display: block;
+}
+.container-fluid{
+    background-color: #c8c9ca;
+    padding: 5% 2%;
+}
