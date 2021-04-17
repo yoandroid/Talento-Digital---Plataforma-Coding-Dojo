@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Formulario de registro</title>
+    </head>
+    <body>
+        <h1>Formulario de Registro</h1>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="registro"><br>
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="registro"><br>
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="registro"><br>
+        <label for="pass">Contraseña:</label>
+        <input type="password" id="pass" name="registro"><br>
+        <label for="pass1">Repetir contraseña:</label>
+        <input type="password" id="pass1" name="registro"><br>
+        <label for="cumpleaños">Cumpleaños:</label>
+        <input type="date" id="cumpleaños" name="registro"><br>
+        <label>Género:</label><br>
+        <label for="masculino">Masculino</label>
+        <input type="radio" id="masculino" name="genero" value="masculino">
+        <label for="femenino">Femenino</label>
+        <input type="radio" id="femenino" name="genero" value="femenino">
+        <label for="prefiero-no-decir">Prefiero no decir</label>
+        <input type="radio" id="prefiero-no-decir" name="genero" value="prefiero-no-decir"><br>
+        <label for="descripcion">Cuentanos un poco sobre ti:</label><br>
+        <textarea id="descripcion"></textarea><br>
+        <label for="lenguaje">Lenguaje de programación favorito:</label>
+        <select name="lenguaje">
+            <option value="java">Java</option>
+            <option value="phyton">Phyton</option>
+            <option value="javascript">Javascript</option>
+            <option value="cplus">C++</option>
+        </select><br>
+        <input type="submit" value="Enviar registro">
+    </body>
+</html>
