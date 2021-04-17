@@ -1,0 +1,255 @@
+*{
+    /* outline: 1px dotted black; */
+    margin: 0px;
+    padding: 0px;
+}
+.header-white{
+    font-size: 42px;
+    font-family: sans-serif;
+    display: inline;
+}
+.span-blue{
+    color: #23669e;
+}
+.span-red{
+    color: #d9231c;
+}
+#globe{
+    width: 100px;
+    height: 100px;
+    display: inline;
+    position: relative;
+    top: 24px;
+}
+
+#header-blue{
+    background: linear-gradient(180deg, rgba(37,102,159,1) 0%, rgba(79,129,172,1) 47%, rgba(37,102,159,1) 100%);
+    color: white;
+    font-size: 32px;
+    font-family: sans-serif;
+    padding: 10px 15px;
+    width: 1032px;
+}
+#content{
+    background: linear-gradient(180deg, rgba(227,227,227,1) 0%, rgba(255,255,255,1) 10%);
+    width: 1061px;
+    min-height: 10px;
+}
+    #left-side{
+        width: 243px;
+        padding: 23px 5px 0px 5px;
+        display: inline-block;
+    }
+        #left-side p{
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+        .title-1{
+            font-size: 19px;
+        }
+        #button-blue{
+            background: linear-gradient(180deg, rgba(95,150,194,1) 15%, rgba(37,103,160,1) 50%);
+            padding: 8px 51px;
+            font-size: 18px;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            margin-bottom: 6px;
+            box-shadow: 3px 3px 6px rgb(0,0,0,0.5);
+        }
+        #button-blue:hover{
+            color: #23669e;
+            background:none ;
+            background-color: white;
+            transition-duration: 0.8s;   
+        }
+        #button-orange{
+            background: linear-gradient(180deg, rgba(234,172,85,1) 15%, rgba(240,117,0,1) 50%);
+            padding: 8px 34px;
+            font-size: 18px;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            box-shadow: 3px 3px 6px rgb(0,0,0,0.5);
+        }
+        #button-orange:hover{
+            color: red;
+            background:none ;
+            background-color: white;
+            transition-duration: 0.8s;   
+        }
+    #black-line{
+        height: 1px;
+        width: 243px;
+        background-color: #bbbbbb;
+        margin: 20px 5px;
+    }
+    #ad{
+        width: 243px;
+        height: 330px;
+        padding: 23px 5px;
+        background-image: url("images/ad_background.png");
+        box-shadow: 3px 3px 6px rgb(0,0,0,0.5);
+    }
+        #ad img{
+            width: 100px;
+            height: 140px;
+            margin: 22px 70px
+        }
+        #ad p{
+            font-family: sans-serif;
+            font-size: 30px;
+            color: white;
+            text-align: center;
+
+        }
+        #ad button{
+            background: linear-gradient(180deg, rgba(119,208,223,1) 1%, rgba(5,197,223,1) 65%, rgba(119,208,223,1) 99%);
+            padding: 6px 38px;
+            margin: 0px 18px;
+            color: white;
+            font-family: sans-serif;
+            font-size: 20px;
+            border-radius: 6px;
+            border: none;
+            width: 204px;
+        }
+        #ad button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+          }
+          
+          #ad button span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: 0px;
+            transition: 0.5s;
+          }
+          
+          #ad button:hover span {
+            padding-right: 10px;
+          }
+          
+          #ad button:hover span:after {
+            opacity: 1;
+            right: -15px;
+          }
+    #title{
+        width: 804px;
+        min-height: 75px;
+        display: inline-block;
+        vertical-align: top;;
+    }
+        #title img{
+            width: 26px;
+            height: 26px;
+            margin: 16px 0px 0px 16px;
+            vertical-align: top;
+        }
+        #title p{
+            display: inline;
+            font-size: 22px;
+            font-family: sans-serif;
+            color: #23669e;
+            vertical-align: top;
+            position: relative;
+            top: 17px;
+        }
+        #call-phone{
+            display: inline-block;
+            width: 290px;
+            min-height: 75px;
+            margin-left: 417px;
+        }
+            #contact{
+                display: inline-block;
+                width: 208px;
+                text-align: right;
+            }
+            #call-phone img{
+                width: 60px;
+                height: 60px;
+                display: inline-block;
+                margin: 10px 0px 0px 7px;
+            }
+            .span-number{
+                font-size: 34px;
+                color: #0dc2e0;
+            }
+            #call-phone p{
+                font-family: sans-serif;
+                font-size: 14px;
+                color: black;
+                position: relative;
+                top: 2px;
+            }
+    #black-line-2{
+        width: 775px;
+        height: 1px;
+        background-color: #bbbbbb;
+        display: inline-block;
+        position: relative;
+        top: -138px;
+        left: 274px;
+    }
+    #main-content{
+        width: 777px;
+        min-height: 200px;
+        display: inline-block;
+        position: relative;
+        top: -550px;
+        left: 258px;
+        padding: 5px 10px 15px 16px;
+    }
+    .span-lightblue{
+        color: #029ab0;
+    }
+    .span-bold{
+        font-weight: bold;
+    }
+    .span-italic{
+        font-style: italic;
+    }
+        #main-content h4{
+            font-size: 22px;
+            font-family: sans-serif;
+            color: #23669e;
+        }
+        #main-content p{
+            font-family: sans-serif;
+            margin: 5px 0px;
+        }
+        #main-content .list-1 li{
+            margin-left: 44px;
+            font-family: sans-serif;
+            padding-bottom: 5px;
+        }
+        #main-content img{
+            width: 333px;
+            margin: 10px 223px;
+        }
+        #main-content ol{
+            margin-top: 5px;
+        }
+        #footer{
+            width: auto;
+            padding: 10px;
+            border: 5px solid #0085e0;
+            border-bottom: 5px solid white;
+            margin-top: 15px;
+        }
+            #footer img{
+                width: 135px;
+                margin: 0px;
+                padding: 0px 16px 0px 0px;
+            }
+            .big3{
+                display: inline-block;
+                width: 586px;
+                vertical-align: top;
+                margin-top: 5px;
+            }
