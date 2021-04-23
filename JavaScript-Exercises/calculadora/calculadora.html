@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="calculadora.css">
+    <script src="calculadora.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+    <div>
+        <div>
+            <input type="text" id="txtNumeros" disabled>
+        </div>
+        <div id="contenedorBotonera">
+            <div>
+                <button type="button" class="button number" onclick="Factorial()">x!</button>
+                <button type="button" class="button number" onclick="SquareRoot()">√</button>
+                <button type="button" class="button number" onclick="Squared()">x²</button>
+                <button type="button" class="button clear" onclick="Clear()">C</button>
+            </div>
+            <div>
+                <button type="button" class="button number" onclick="AddNum(7)">7</button>
+                <button type="button" class="button number" onclick="AddNum(8)">8</button>
+                <button type="button" class="button number" onclick="AddNum(9)">9</button>
+                <button type="button" class="button operator" onclick="Div()">÷</button>
+            </div>
+            <div>
+                <button type="button" class="button number" onclick="AddNum(4)">4</button>
+                <button type="button" class="button number" onclick="AddNum(5)">5</button>
+                <button type="button" class="button number" onclick="AddNum(6)">6</button>
+                <button type="button" class="button operator" onclick="Mul()">x</button>
+            </div>
+            <div>
+                <button type="button" class="button number" onclick="AddNum(1)">1</button>
+                <button type="button" class="button number" onclick="AddNum(2)">2</button>
+                <button type="button" class="button number" onclick="AddNum(3)">3</button>
+                <button type="button" class="button operator" onclick="Res()">-</button>
+            </div>
+            <div>
+                <button type="button" class="button number" onclick="AddNum(0)">0</button>
+                <button type="button" class="button number" onclick="AddDecimal()">.</button>
+                <button type="button" class="button ans" onclick="Ans()">=</button>
+                <button type="button" class="button operator" onclick="Sum()">+</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
