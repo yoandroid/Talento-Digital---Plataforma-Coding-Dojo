@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Formulario Retiro tercer 10%</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="formulario-2.css">
+        <script src="formulario-2.js"></script>
+    </head>
+    <body>
+        <div class="container p-3" id="personal-info">
+            <h1 class="display-3 mt-3 mb-5 text-center">Ingresa tus datos personales</h1>
+            <form>
+                <div class="row my-4">
+                    <div class="col-sm-6">
+                        <label for="rut">RUT (sin puntos ni guión)</label>
+                        <input type="text" class="form-control" id="rut" placeholder="RUT">
+                        <p class="lead" id="rutValidation"></p>
+                    </div>
+                </div>
+                <div class="row my-4">
+                    <div class="col-sm">
+                        <label for="doc-number">Número de Serie o Documento</label>
+                        <input type="text" class="form-control" id="doc-number" placeholder="A000000001">
+                        <p class="lead" id="doc-numberValidation"></p>
+                    </div>
+                    <div class="col-sm">
+                        <label for="conf-doc-number">Confirmar Número de Serie o Documento</label>
+                        <input type="text" class="form-control" id="conf-doc-number" placeholder="A000000001">
+                        <p class="lead" id="conf-doc-numberValidation"></p>
+                    </div>
+                </div>
+                <div class="row my-4">
+                    <div class="col-sm">
+                        <label for="email">E-mail</label>
+                        <input type="text" class="form-control" id="email" placeholder="email@dominio.com">
+                        <p class="lead" id="emailValidation"></p>
+                    </div>
+                    <div class="col-sm">
+                        <label for="conf-email">Confirmar E-mail</label>
+                        <input type="text" class="form-control" id="conf-email" placeholder="email@dominio.com">
+                        <p class="lead" id="conf-emailValidation"></p>
+                    </div>
+                </div>
+                <div class="row my-4">
+                    <div class="col">
+                        <label for="phone-number">Número de Celular</label>
+                        <div class="input-group">
+                            <span class="input-group-text">+569</span>
+                            <input type="text" class="form-control" id="phone-number">    
+                        </div>
+                        <p class="lead" id="phone-numberValidation"></p>
+                    </div>
+                    <div class="col">
+                        <label for="conf-phone-number">Confirmar Número de Celular</label>
+                        <div class="col input-group">
+                            <span class="input-group-text">+569</span>
+                            <input type="text" class="form-control" id="conf-phone-number">   
+                        </div>
+                        <p class="lead" id="conf-phone-numberValidation"></p>
+                    </div>
+                </div>
+                
+            </form>
+            <div class="row">
+                <div class="col d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button type="button" class="btn btn-primary btn-lg px-5" id="user-validator" onclick="validation()">Siguiente</button>
+                </div>
+            </div>
+            
+        </div>
+        <div class="container p-4" id="payment">
+            <h3 class="display-4 my-4">Elige tu modalidad de pago</h3>
+            <p class="big">Para recibirlo en tu Cuenta Bancaria, elige una opción</p>
+            <div class="form-check form-check-inline ">
+                <input class="form-check-input" type="radio" name="paymentmethod" id="bancoestado" value="option1" checked>
+                <label class="form-check-label" for="bancoestado">Cuenta RUT (Banco Estado)</label>
+            </div>
+            <div class="form-check form-check-inline ">
+                <input class="form-check-input" type="radio" name="paymentmethod" id="otherbank" value="option2">
+                <label class="form-check-label" for="otherbank">Cuenta de otro Banco</label>
+            </div>
+            <hr class="my-4">
+            <p class="big">Transferencia o Cuenta de Ahorro Voluntaria (Cuenta 2) en tu AFP</p>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="paymentmethod" id="cuenta2afp" value="option3">
+                <label class="form-check-label" for="cuenta2afp">Cuenta de Ahorro Voluntario (Cuenta 2)</label>
+            </div>
+            <div class="row">
+                <div class="col d-grid gap-2 d-md-block justify-content-md-start">
+                    <button type="button" class="btn btn-outline-primary btn-lg my-4 px-5" id="back" onclick="backtopersonalinfo()">Volver</button>
+                </div>
+                <div class="col d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button type="button" class="btn btn-primary btn-lg my-4 px-5" id="payment-validator" onclick="showresume()">Solicitar retiro</button>
+                </div>
+            </div>
+        </div>
+        <div class="container pd-4 mt-5" id="resume">
+            <h1 class="display-5 my-4 text-primary"><b>Tu solicitud se ha ingresado correctamente!</b></h1>
+            <p class="big">Resumen de los datos del postulante:</p>
+            <p id="userRut"><b>Rut:&nbsp;</b></p>
+            <p id="userDocnum"><b>Número de Serie:&nbsp;</b></p>
+            <p id="userEmail"><b>E-mail:&nbsp;</b></p>
+            <p id="userPhonenum"><b>Número de Celular:&nbsp;</b></p>
+            <p id="userPayment"><b>Modalidad de pago:&nbsp;</b></p>
+        </div>
+        <scrip src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></scrip>
+    </body>
+</html>

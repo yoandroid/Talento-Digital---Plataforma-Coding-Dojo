@@ -1,0 +1,26 @@
+.form-control{
+    display: inline-block;
+}
+.chilean-number{
+    vertical-align: sub;
+    margin-left: 20%;
+}
+.lead {
+    font-size: 14px;
+}
+.big {
+    font-size: 18px;
+}
+#personal-info{
+    border: 15px solid #f1f4f8;
+    border-radius: 40px;
+}
+#payment{
+    display: none;
+    background-color: #f1f4f8;
+}
+#resume{
+    display: none;
+    border: 15px solid #009ac7;
+    border-radius: 40px;
+}
