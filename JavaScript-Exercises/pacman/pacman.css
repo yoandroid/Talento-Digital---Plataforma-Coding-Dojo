@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+}
+
+div.row div{
+    width: 20px;
+    height: 20px;
+    display: table-cell;
+}
+
+div.empty{
+    background-color: black;
+}
+
+div.brick{
+    background-color: blue;
+}
+
+div.coin{
+    background: url('img/coin.gif') no-repeat center;
+}
+
+div.cherry{
+    background: url('img/cherry.png') no-repeat center;
+    background-size: cover;
+}
+
+div.life{
+    background: url('img/life.png');
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    color: white;
+    display: inline-block;
+    position: relative;
+    top: 4px;
+}
+
+div#pacman{
+    background-image: url('img/pacman-right.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+}
+
+div#pacman2{
+    background-image: url('img/pacman-left.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+}
+
+div#ghost{
+    background-image: url('img/red-ghost.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+}
+
+div#score{
+    color: white;
+    font-size: 18px;
+    font-family: monospace;
+    padding: 0px 10px;
+    width: 65px;
+    text-align: center;
+}
+
+div#life{
+    color: white;
+    /* border: 1px solid white; */
+    display: inline-block;
+    padding: 10px 19px;
+    width: auto;
+    position: absolute;
+    top: 175px;
+    left: 140px;
+
+}
+
+div#game-over{
+    background: url('img/gameover.jpg');
+    background-size: cover;
+    display: none;
+    width: 184px;
+    height: 100px;
+    position: absolute;
+    top: 42px;
+    left: 96px;
+}
+
+div#play-again{
+    display: none;
+    position: absolute;
+    left: 127px;
+    top: 181px;
+}
+    div#play-again button{
+        padding: 10px;
+        background-color: black;
+        color: white;
+        border: 2px solid white;
+        font-size: 20px;
+        font-family: monospace;
+        border-radius: 20px;
+        transition-duration: 0.1s;
+    }
+    div#play-again button:hover{
+        background-color: white;
+        color: black;
+    }
