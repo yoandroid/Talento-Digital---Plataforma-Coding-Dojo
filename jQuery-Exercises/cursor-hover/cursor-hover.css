@@ -1,0 +1,26 @@
+.image{
+    background: url('img/pokemon.jpg');
+    width: 133px;
+    height: 150px;
+}
+
+.one{
+    background-position: -12px -23px;
+    /* background-position: -295px -19px; */
+}
+
+.two{
+    background-position: -440px -21px;
+    /* background-position: -728px -17px; */
+
+}
+
+.three{
+    background-position: -872px -19px;
+    /* background-position: -11px -175px; */
+}
+
+.four{
+    background-position: -12px -487px;
+    /* background-position: -157px -482px; */
+}

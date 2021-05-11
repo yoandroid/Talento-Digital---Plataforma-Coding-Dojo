@@ -1,0 +1,19 @@
+.text{
+    display: inline-block;
+}
+
+.show h3{
+    display: none;
+}
+
+.slide ul{
+    display: none;
+}
+
+.fadein h3{
+    display: none;
+}
+
+.red{
+    background-color: red;
+}
