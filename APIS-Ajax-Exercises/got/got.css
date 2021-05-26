@@ -1,0 +1,14 @@
+* {
+    font-family: sans-serif;
+}
+img {
+    width: 300px;
+}
+
+img:nth-of-type(2){
+    height: 169px;
+}
+
+#house-details {
+    display: none;
+}
